@@ -4,7 +4,7 @@ import (
 	"myapp/data"
 	"net/http"
 
-	"github.com/moltenpl85/celeritas"
+	"github.com/moltenpl85/celeritas/v2"
 )
 
 type Handlers struct {

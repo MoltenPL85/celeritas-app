@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/go-chi/chi/v5"
-	"github.com/moltenpl85/celeritas"
+	"github.com/moltenpl85/celeritas/v2"
 )
 
 func (a *application) routes() *chi.Mux {

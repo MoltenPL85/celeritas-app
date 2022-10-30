@@ -11,9 +11,9 @@ import (
 	"github.com/CloudyKit/jet/v6"
 	"github.com/alexedwards/scs/v2"
 	"github.com/go-chi/chi/v5"
-	"github.com/moltenpl85/celeritas"
-	"github.com/moltenpl85/celeritas/mailer"
-	"github.com/moltenpl85/celeritas/render"
+	"github.com/moltenpl85/celeritas/v2"
+	"github.com/moltenpl85/celeritas/v2/mailer"
+	"github.com/moltenpl85/celeritas/v2/render"
 )
 
 var cel celeritas.Celeritas
