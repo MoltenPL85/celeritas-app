@@ -4,6 +4,7 @@ import (
 	"net/http"
 
 	"github.com/go-chi/chi/v5"
+	"github.com/moltenpl85/celeritas"
 )
 
 func (a *application) routes() *chi.Mux {
@@ -15,6 +16,9 @@ func (a *application) routes() *chi.Mux {
 	// static routes
 	fileServer := http.FileServer(http.Dir("./public"))
 	a.App.Routes.Handle("/public/*", http.StripPrefix("/public", fileServer))
+
+	a.App.Routes.Mount("/celeritas", celeritas.Routes())
+	a.App.Routes.Mount("/api", a.ApiRoutes())
 
 	return a.App.Routes
 }
